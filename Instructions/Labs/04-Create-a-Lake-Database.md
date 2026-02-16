@@ -75,7 +75,7 @@ In this task, you will be modifying the container permissions to Microsoft Entra
 1. After the deployment script has completed, in the Azure portal, go to the **analyticsxxxxx** resource group that is created, and notice that this resource group contains your Synapse workspace, a Storage account for your data lake, and an Apache Spark pool.
 
 
-    ![Azure portal with a cloud shell pane](./images/DA-image70.png) 
+      ![Azure portal with a cloud shell pane](./images/DA-image70.png) 
    
 3. Select the **Storage account** named **datalakexxxxxxx**  
 
@@ -204,7 +204,12 @@ Now that you have created a lake database, you can define its schema by creating
 
 2. Open the new **Customer** folder, which should be empty.
 
-3. Download the **customer.csv** data file from https://github.com/CloudLabsAI-Azure/Data-Analytics-with-Azure-Synapse/blob/main/Allfiles/labs/04/data/customer.csv and save it in a folder on your local computer (it doesn't matter where). Then in the **Customer** folder in Synapse Explorer, use the **&#10514; Upload (1)** button to upload the **customer.csv (2)** file to the **RetailDB/Customer** folder in your data lake. After selecting the file, click on **Upload (3)** to complete the process.
+3. Download the **customer.csv** data file from the below. Save it in a folder on your local computer (it doesn't matter where). Then in the **Customer** folder in Synapse Explorer, use the **&#10514; Upload (1)** button to upload the **customer.csv (2)** file to the **RetailDB/Customer** folder in your data lake. After selecting the file, click on **Upload (3)** to complete the process.
+
+    ```
+    https://github.com/CloudLabsAI-Azure/Data-Analytics-with-Azure-Synapse/blob/main/Allfiles/labs/04/data/customer.csv 
+    
+    ```
 
     ![New folder](./images/synapse-lab3-3.png)
 
