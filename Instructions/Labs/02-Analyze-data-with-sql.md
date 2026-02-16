@@ -85,7 +85,7 @@ In this task, you will  be working with Synapse Studio where you will query the 
 
    ![](./images/synapse-lab2-2.png)
 
-4. On the **Data** **(1)** page, view the **Linked** **(2)** tab and verify that your workspace includes a link to your Azure Data Lake Storage Gen2 storage account, which should have a name similar to **synapse*xxxxxxx* (Primary - datalake*xxxxxxx*)**.
+4. On the **Data** **(1)** page, view the **Linked** **(2)** tab and verify that your workspace includes a link to your Azure Data Lake Storage Gen2 storage account, which should have a name similar to **synapsexxxxxxx (Primary - datalakexxxxxxx)**.
 
    ![](./images/labimg3.png)
 
@@ -259,7 +259,7 @@ JSON is another popular data format, so it;s useful to be able to query .json fi
 
 2. Right-click the **json (1)** folder, and then in the **New SQL script (2)** list on the toolbar, select **Select TOP 100 rows (3)**. 
 
-    ![](./images/synapse-lab2-14.png)
+    ![](./images/synapse-lab2-14-1.png)
 
 3. In the **File type** list, select **Text format**, and then **Apply** the settings to open a new SQL script that queries the data in the folder. The script should look similar to this:
 
@@ -282,18 +282,18 @@ JSON is another popular data format, so it;s useful to be able to query .json fi
     - Add parameters for field terminator, quoted fields, and row terminators with the character code *0x0b*.
     - Format the results as a single field containing the JSON row of data as an NVARCHAR(MAX) string.
 
-    ```sql
-    SELECT
-        TOP 100 *
-    FROM
-        OPENROWSET(
-            BULK 'https://datalakexxxxxxx.dfs.core.windows.net/files/sales/json/',
-            FORMAT = 'CSV',
-            FIELDTERMINATOR ='0x0b',
-            FIELDQUOTE = '0x0b',
-            ROWTERMINATOR = '0x0b'
-        ) WITH (Doc NVARCHAR(MAX)) as rows
-    ```
+        ```sql
+        SELECT
+            TOP 100 *
+        FROM
+            OPENROWSET(
+                BULK 'https://datalakexxxxxxx.dfs.core.windows.net/files/sales/json/',
+                FORMAT = 'CSV',
+                FIELDTERMINATOR ='0x0b',
+                FIELDQUOTE = '0x0b',
+                ROWTERMINATOR = '0x0b'
+            ) WITH (Doc NVARCHAR(MAX)) as rows
+        ```
 
 5. Run the modified code and observe that the results include a JSON document for each order.
 
