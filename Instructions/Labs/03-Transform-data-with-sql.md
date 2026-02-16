@@ -27,7 +27,7 @@ In this task, you'll use a combination of a PowerShell script and an ARM templat
 
     ![Azure portal with a cloud shell pane](./images/DA-image2.png)
   
-    **Important** : If you have storage account already configured for the Azure CLI, then please start performing the lab from the step 6.
+    > **Important** : If you have storage account already configured for the Azure CLI, then please start performing the lab from the step 6.
 
 1. On Getting started window choose **Mount storage account(1)** then under Storage account subscription select your available **subscription (2)** from the dropdown and click on **Apply (3)**.
 
@@ -84,7 +84,7 @@ In this task, you will be working on Synapse studio where you will query various
 
      ![Azure portal with a cloud shell pane](./images/DA-image(9).png)
 
-1. On the **Data** **(1)** page, view the **Linked** **(2)** tab and verify that your workspace includes a link to your Azure Data Lake Storage Gen2 storage account, which should have a name similar to **synapse*xxxxxxx* (Primary - datalake*xxxxxxx*)**.
+1. On the **Data** **(1)** page, view the **Linked** **(2)** tab and verify that your workspace includes a link to your Azure Data Lake Storage Gen2 storage account, which should have a name similar to **synapsexxxxxxx (Primary - datalakexxxxxxx)**.
 
    ![](./images/labimg3.png)
    
@@ -278,7 +278,7 @@ If you will need to transform data frequently, you can use a stored procedure to
 
 In this task, you will create the stored procedure using SQL script and get the data using SELECT statement.
 
-1. In Synapse Studio, on the **Data** page, Sales (SQL) database in the **...** menu, select **SQL script** and hit on empty script.
+1. In Synapse Studio, on the **Data** page, Sales (SQL) database in the **...** menu, select **New SQL script** and hit on empty script.
    
 2. In the new script pane, add the following code to create a stored procedure in the **Sales** database that aggregates sales by year and saves the results in an external table:
 
