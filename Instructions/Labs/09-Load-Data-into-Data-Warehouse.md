@@ -120,7 +120,8 @@ In this task, we will open Synapse Studio, verify the status of the dedicated SQ
 Let's look at some SQL Based approaches to loading data into the Data Warehouse.
 
 1. On the  **Data** page, select the **workspace** tab.
-2. Expand **SQL Database** and select your **sql*xxxxxxx** database. Then in its **...** menu, select **New SQL Script** >**Empty Script**.
+
+2. Expand **SQL Database** and select your **sqlxxxxxxx** database. Then in its **...** menu, select **New SQL Script** >**Empty Script**.
 
      ![Azure portal with a cloud shell pane](./images/DA-image(19).png)
    
