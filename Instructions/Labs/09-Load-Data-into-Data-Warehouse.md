@@ -86,7 +86,7 @@ In this task, we will open Synapse Studio, verify the status of the dedicated SQ
 
    ![Azure portal with a cloud shell pane](./images/DA-image11.png)
 
-   >**Note**Resuming the pool can take a few minutes. You can use the **&#8635; Refresh** button to check its status periodically. The status will show as **Online** 
+   >**Note:** Resuming the pool can take a few minutes. You can use the **&#8635; Refresh** button to check its status periodically. The status will show as **Online** 
     when it's ready. While you're waiting, proceed with the steps below to view the data files you will load.
 
     ![Azure portal with a cloud shell pane](./images/DA-image(12).png)
