@@ -262,7 +262,7 @@ In this task, you will define a schema for the table RetailDB and load the data 
 
     ![Change to Azure AD user account](./images/DP-203(4--4).png)
 
-8. Add a new column named **ListPrice** to the table as shown here:
+8. Add a new column named **ListPrice**, enter **The Product Price** as the **description**, and set the **Format/Length** to **18,2**, as shown in the table below.
 
     ![Change to Azure AD user account](./images/DP-203(4--5).png)
 
@@ -282,7 +282,11 @@ In this task, you will define a schema for the table RetailDB and load the data 
 
 3. Open the new **Product** folder, which should be empty.
 
-4. Download the **product.csv** data file from https://github.com/CloudLabsAI-Azure/Data-Analytics-with-Azure-Synapse/blob/main/Allfiles/labs/04/data/product.csv and save it in a folder on your local computer (it doesn't matter where). Then in the **Product** folder in Synapse Explorer, use the **&#10514; Upload** button to upload the **product.csv** file to the **RetailDB/Product** folder in your data lake. 
+4. Download the **product.csv** data file from the below link. Save it in a folder on your local computer (it doesn't matter where). Then in the **Product** folder in Synapse Explorer, use the **&#10514; Upload** button to upload the **product.csv** file to the **RetailDB/Product** folder in your data lake.
+
+    ```
+    https://github.com/CloudLabsAI-Azure/Data-Analytics-with-Azure-Synapse/blob/main/Allfiles/labs/04/data/product.csv 
+    ``` 
 
     ![New folder](./images/synapse-lab3-12.png)
 
@@ -308,7 +312,11 @@ In this task, you will use an existing data which is already present and create 
 
 3. Open the new **SalesOrder** folder, which should be empty.
 
-4. Download the **salesorder.csv** data file from https://github.com/CloudLabsAI-Azure/Data-Analytics-with-Azure-Synapse/blob/main/Allfiles/labs/04/data/salesorder.csv and save it in a folder on your local computer (it doesn't matter where). Then in the **SalesOrder** folder in Synapse Explorer, use the **&#10514; Upload** button to upload the **salesorder.csv** file to the **RetailDB/SalesOrder** folder in your data lake. 
+4. Download the **salesorder.csv** data file from the below. Save it in a folder on your local computer (it doesn't matter where). Then in the **SalesOrder** folder in Synapse Explorer, use the **&#10514; Upload** button to upload the **salesorder.csv** file to the **RetailDB/SalesOrder** folder in your data lake. 
+
+    ```
+    https://github.com/CloudLabsAI-Azure/Data-Analytics-with-Azure-Synapse/blob/main/Allfiles/labs/04/data/salesorder.csv 
+    ```
 
     ![New folder](./images/synapse-lab3-15.png)
 
@@ -323,7 +331,7 @@ In this task, you will create a table SalesOrder from data lake and verify it.
 
 1. Then in the **Create external table from data lake** pane, specify the following options:
     - **External table name (1)**: SalesOrder
-    - **Linked service (2)**: Select **synapse*xxxxxxx*-WorkspaceDefautStorage(datalake*xxxxxxx*)**
+    - **Linked service (2)**: Select **synapsexxxxxxx-WorkspaceDefautStorage(datalakexxxxxxx)**
     - **Input file of folder (3)**: files/RetailDB/SalesOrder 
 
         ![New folder](./images/synapse-lab3-16.1.png)
@@ -403,7 +411,7 @@ In this task, you will be inserting data in to the table using notebook attached
 
     ![New folder](./images/synapse-lab3-23.png)
 
-    >**Note** : In case in **Attach to** **spark*xxxxxxx**** Spark pool is not represent kindly click on **Manage pools** then on **Apache Spark pool** page click on **+ New**. In Apache Spark pool name field provide name spark<inject key="DeploymentID" enableCopy="false"/> once deployment is complete select spark<inject key="DeploymentID" enableCopy="false"/> as mention in above step.
+    >**Note** : In case in **Attach to** **sparkxxxxxxx** Spark pool is not represent kindly click on **Manage pools** then on **Apache Spark pool** page click on **+ New**. In Apache Spark pool name field provide name spark<inject key="DeploymentID" enableCopy="false"/> once deployment is complete select spark<inject key="DeploymentID" enableCopy="false"/> as mention in above step.
     
 3. Enter the following code in the empty notebook cell:
 
