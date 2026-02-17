@@ -95,11 +95,11 @@ In this task, you will be downloading a precreated notebook and using the spark 
 
     ![Spark Notebook import](./image/../images/Str_01.png)
 
-15. Select the role Blob contributor as shown in the screenshot and click on Next. under members click on **Select members**.
+15. Select the role **Storage Blob contributor** as shown in the screenshot and click on **Next**. Under **Members** tab, click on **+ Select members**.
 
     ![Spark Notebook import](./image/../images/Str_02.png)
 
-16. Provide the odl user name, click on it and click on select. click on **Next** twice and click on **Review + assign**.
+16. Provide <inject key="AzureAdUserEmail"></inject>, click on it and click on **Select**. click on **Next** twice and click on **Review + assign**.
 
     ![Spark Notebook import](./image/../images/Str_03.png)
 
